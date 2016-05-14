@@ -1,5 +1,20 @@
 # OpenElDispv2
 
+A tool for displaying on an OLED display the telemetry flight data:
+
+-speed
+-altitude
+-heading
+-distance to home
+-heading to home
+-parameters of sat. navigation (valid fix, number of satellites, HDOP, etc)
+
+Data is received over the serial port. The received data is stored in a EEPROM memory, so that it can be recovered in case of crash, or analysed.
+
+Two data formats are supported:
+
+-Mavlink
+-Eleres
 
 
 -Arduino Pro Mini
@@ -13,4 +28,5 @@ http://www.ebay.com/itm/I2C-2-42-OLED-128x64-Graphic-OLED-White-Display-Arduino-
 http://www.microchip.com/wwwproducts/en/24LC256
 
 -two buttons
+
 
