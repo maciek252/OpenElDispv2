@@ -12,7 +12,12 @@ extern SSD1306AsciiAvrI2c oled;
 
 extern int screenNr;
 
+extern struct eLeReS_data eLeReS;
+
 class Screen {
+
+protected:
+	String str;
 
 public:
 	virtual void display(){
@@ -29,6 +34,10 @@ public:
 		display();
 	}
 
+
+	void setText(String str){
+		this->str = str;
+	}
 };
 
 class Screen1: public Screen {
@@ -39,7 +48,9 @@ public:
 		oled.setRow(1);
 		oled.setCol(2);
 		oled.println("jestem 1");
-
+		oled.println(str);
+		oled.print("kurs=");
+		oled.println(eLeReS.KURS);
 	}
 };
 
