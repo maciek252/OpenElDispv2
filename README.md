@@ -1,6 +1,5 @@
 # OpenElDispv2
 
-<<<<<<< HEAD
 
 =======
 A tool for displaying on an OLED display the telemetry flight data:
@@ -30,6 +29,10 @@ http://www.ebay.com/itm/I2C-2-42-OLED-128x64-Graphic-OLED-White-Display-Arduino-
 
 http://www.microchip.com/wwwproducts/en/24LC256
 
+<<<<<<< HEAD
 -two buttons
+=======
+-two buttons for switching between screens and configuration
+>>>>>>> 339b594ab8df32d40cacfd2aa78d0c5feec3f062
 
 compile with arduino 1.6.8
